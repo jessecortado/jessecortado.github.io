@@ -1,0 +1,157 @@
+@font-face {
+	font-family: 'Montserrat Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Montserrat Regular'), url('../fonts/Montserrat-Regular.ttf') format('ttf');
+}
+
+
+@font-face {
+	font-family: 'Montserrat Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Montserrat Bold'), url('../fonts/Montserrat-Bold.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Trajan Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Trajan Pro Regular'), url('../fonts/TrajanPro-Regular.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Trajan Pro Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Trajan Pro Bold'), url('../fonts/TrajanPro-Bold.woff') format('woff');
+}
+
+#my-resume {
+	--fixedheight: 1200px;
+	position: relative;
+	height: var(--fixedheight);
+	max-width: 900px;
+	margin: auto;
+	background: #ffffff;
+	color: #000000;
+	overflow: hidden;
+	border: none;
+}
+
+#left-panel {
+	position: absolute;
+    top: 0;
+    left: 0;
+	height: inherit;
+	width: 320px;
+}
+
+.codes-img {
+	background-image: url('../img/php-codes-image.jpg');
+	background-size: cover;
+	height: calc(var(--fixedheight) + 1px);
+	width: inherit;
+    clip-path: polygon(0 0, 10% 0, 10% 28%, 99% 38%, 100% 100%, 0 100%);
+}
+
+.codes-img::before {
+	content: "";
+	display: block;
+	background-color: #263849;
+	height: inherit;
+	width: inherit;
+	opacity: 0.9;
+}
+
+#line-border-1 {
+	background-color: #3399cc;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(9% 0, 18% 0, 18% 26%, 80% 33%, 80% 36%, 9% 28%);
+}
+
+#line-border-2 {
+	background-color: #26AFD3;
+	height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(19% 32%, 19% 29%, 100% 38%, 100% 100%, 90% 100%, 90% 40%)
+}
+
+#main-content {
+    margin-left: 85px;
+}
+
+#left-panel .details {
+	position: absolute;
+    top: 50%;
+	margin: 0 20px;
+}
+
+/*  Personal Information  */
+.personal-info {
+	display: flex;
+	margin-top: 55px;
+}
+
+.personal-info .details {
+	margin: 0 20px;
+	text-align: center;
+}
+
+.personal-info img {
+	border-radius: 50%;
+	height: 220px;
+	margin: 0 30px;
+}
+
+.first-name {
+	font-family: 'Trajan Pro Regular';
+	font-weight: normal;
+	font-size: 56px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.last-name {
+	color: #3399cc;
+}
+
+.occupation {
+	font-family: 'Montserrat Regular';
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+.title {
+	font-family: 'Montserrat Regular';
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+.title.white {
+	color: #ffffff;
+}
+
+.resume-container {
+	margin-left: 260px;
+}
+
+/*  Line Styles  */
+.line {
+	border: 1px solid;
+}
+
+.blue-line::after {
+	content: "";
+	display: block;
+	border-bottom: 2px solid #26AFD3;
+	width: 80px;
+}
