@@ -40,7 +40,8 @@
 	<!-- Social Buttons -->
 	<div class="social-media">
 		<a href="https://www.facebook.com/jesse.cortado" target="_blank">Facebook <i class="fab fa-facebook-square"></i></a>
-		<a href="https://www.linkedin.com/in/jesse-cortado-b84b75135" target="_blank">LinkedIn <i class="fab fa-linkedin" style="    color: #0a66c2;"></i></a>
+		<a href="https://www.linkedin.com/in/jesse-cortado-b84b75135" target="_blank">LinkedIn <i class="fab fa-linkedin"></i></a>
+		<a href="https://www.onlinejobs.ph/jobseekers/info/512694" target="_blank">OnlineJobs <i class="fas fa-laptop"></i></a>
 	</div>
 
 	<!-- HEADER -->
@@ -81,8 +82,7 @@
 	<section id="about-me">
 		<div class="intro">
 			<div class="if-else-style">
-				<!-- <a id="guest-name-link"><?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].'?var=Jesse'; ?></a> -->
-				<input type="text" id="guest-name-link" class="guest_textbox" name="guest_name" spellcheck="false" placeholder="Enter your name" maxlength="12">
+				<input type="text" id="guest-name-link" class="guest_textbox" name="guest_name" spellcheck="false" placeholder="Enter your name" maxlength="12" autocomplete="off">
 				<span id="echo-guest-name">
 					<?php echo $var.'!"'; ?>
 				</span>
@@ -97,11 +97,10 @@
 			</div>
 		</div>
 	</section>
-
-	<div class="container">
 		
-		<!-- My Projects -->
-		<section id="my-projects">
+	<!-- My Projects -->
+	<section id="my-projects">
+		<div class="container">
 			<h1>THIS IS MY PROJECTS</h1>
 			<article>
 				<h2>Project #1</h2>
@@ -124,10 +123,12 @@
 					<img src="John Doe.png" alt="John Doe"/>
 				</figure>
 			</article>
-		</section>
+		</div>
+	</section>
 
-		<!-- My Resume -->
-		<section id="my-resume">
+	<!-- My Resume -->
+	<section id="my-resume">
+		<div class="container">
 			<div id="left-panel">
 				<div class="codes-img"></div>
 				<div id="line-border-1"></div>
@@ -155,20 +156,23 @@
 			</div>
 
 			<a href="javascript:;">Download</a>
-		</section>
+		</div>
+	</section>
 
-		<!-- My Contact -->
-		<section id="my-contact">
+	<!-- My Contact -->
+	<section id="my-contact">
+		<div class="container">
 			<h1>THIS IS MY CONTACT</h1>
-		</section>
+		</div>
+	</section>
 
-	</div>
+	<!-- </div> -->
 
 	<!-- Footer -->
 	<section class="footer">
 		<div class="container-fluid">
-			<div class="container d-flex justify-content-center">
-				<h1>THIS IS THE FOOTER</h1>
+			<div class="container d-flex justify-content-center align-items-center box">
+				<p>© 2024 Jesse D. Cortado</p>
 			</div>
 		</div>
 	</section>
